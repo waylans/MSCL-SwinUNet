@@ -18,13 +18,6 @@ from .potsdam import PotsdamDataset
 from .stare import STAREDataset
 from .voc import PascalVOCDataset
 
-## added by LYU: 2022/03/03
-from .mmotu import MMOTUDataset
-## added by LYU: 2022/03/23
-from .mmotu_forAdap import MMOTUDataset_forAdap
-## added by LYU: 2023/07/14
-from .WHS2d_forAdap import WHS2dDataset_forAdap
-from .WHS2d import WHS2dDataset
 
 __all__ = [
     'CustomDataset', 'build_dataloader', 'ConcatDataset', 'RepeatDataset',
@@ -33,5 +26,5 @@ __all__ = [
     'PascalContextDataset59', 'ChaseDB1Dataset', 'DRIVEDataset', 'HRFDataset',
     'STAREDataset', 'DarkZurichDataset', 'NightDrivingDataset',
     'COCOStuffDataset', 'LoveDADataset', 'MultiImageMixDataset',
-    'ISPRSDataset', 'PotsdamDataset', 'MMOTUDataset', 'MMOTUDataset_forAdap', 'WHS2dDataset'
+    'ISPRSDataset', 'PotsdamDataset'
 ]
