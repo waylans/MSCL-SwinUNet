@@ -5,8 +5,8 @@ This repo is the implementation of ["Multi-Scheme Cross-Level Attention Embedded
 <table>
     <tr>
     <td><img src="PaperFigs\Fig1.png" width = "100%" alt="MSCL-SwinUNet"/></td>
-    <td><img src="PaperFigs\Fig5.png" width = "100%" alt="ACDC"/></td>
-     <td><img src="PaperFigs\Fig6.png" width = "100%" alt="MM-WHS"/></td>
+    <td><img src="PaperFigs\Fig5.png" width = "50%" alt="ACDC"/></td>
+     <td><img src="PaperFigs\Fig6.png" width = "50%" alt="MM-WHS"/></td>
     </tr>
 </table>
 
