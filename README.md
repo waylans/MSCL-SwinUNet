@@ -2,13 +2,6 @@
 
 This repo is the implementation of ["Multi-Scheme Cross-Level Attention Embedded U-shape Transformer for MRI Semantic Segmentation"]. we refer to  [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) and [MMGeneration](https://github.com/open-mmlab/mmgeneration) and Supervised MRI Semantic Segmentation task. Many thanks to SenseTime and their two excellent repos.
 
-<table>
-    <tr>
-    <td><img src="PaperFigs\Fig1.png" width = "100%" alt="MSCL-SwinUNet"/></td>
-    <td><img src="PaperFigs\Fig5.png" width = "100%" alt="ACDC"/></td>
-     <td><img src="PaperFigs\Fig6.png" width = "100%" alt="MM-WHS"/></td>
-    </tr>
-</table>
 
 <table>
   <tr>
