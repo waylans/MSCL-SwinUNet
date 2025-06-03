@@ -53,7 +53,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 
 ### Training
 
-**swin_base_patch4_window7_224_22k.pth** : Before training Segformer , loading ImageNet-pretrained swin_base_patch4_window7_224_22k.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.
+**swin_base_patch4_window7_224_22k.pth** : Before training SwinUNet , loading ImageNet-pretrained swin_base_patch4_window7_224_22k.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.
 
 #### Task1: Segmentation results on ACDC dataset
 
