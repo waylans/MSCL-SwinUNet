@@ -43,7 +43,7 @@ This repo is the implementation of ["Multi-Scheme Cross-Level Attention Embedded
 
 **mit_b5.pth** : [google drive](https://drive.google.com/drive/folders/1cmKZgU8Ktg-v-jiwldEc6IghxVSNcFqk?usp=sharing) (Before training Segformer or DS<sup>2</sup>Net_T, loading ImageNet-pretrained mit_b5.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.)
 
-#### Task1: Single-modality semantic segmentation
+#### Task: Single-modality semantic segmentation
 
 <table>
     <tr>
@@ -51,79 +51,24 @@ This repo is the implementation of ["Multi-Scheme Cross-Level Attention Embedded
     </tr>
 </table>
   
-     cd 
+     cd MSCL-SwinUNet
      
-     ./tools/dist_train.sh ./experiments/pspnet_r50-d8_769x769_20k_MMOTU/config/pspnet_r50-d8_769x769_20k_MMOTU.py 2
+     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
-#### Task2: UDA semantic segmentation
-
-<table>
-    <tr>
-    <td><img src="PaperFigs\UDASeg.jpg" width = "100%" alt="UDA Multi-Modality semantic segmentation"/></td>
-    </tr>
-</table>
-
-     cd MMOTU_DS2Net
-     
-     ./tools/dist_train.sh ./experiments/DS2Net_segformerb5_769x769_40k_MMOTU/config/DS2Net_segformerb5_769x769_40k_MMOTU.py 2
-
-#### Task3: Single-modality recognition: 
-
-<table>
-    <tr>
-    <td><img src="PaperFigs\SCls.jpg" width = "100%" alt="Single-Modality recognition"/></td>
-    </tr>
-</table>
 
 ### Testing
 
 #### Task: Single-modality semantic segmentation
   
-     cd MMOTU_DS2Net
+     cd MSCL-SwinUNet
      
-     ./tools/dist_test.sh ./experiments/pspnet_r50-d8_769x769_20k_MMOTU/config/pspnet_r50-d8_769x769_20k_MMOTU.py ./experiments/pspnet_r50-d8_769x769_20k_MMOTU/results/iter_80000.pth --eval mIoU
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/WHS_iter_3200_81.11.pth 2 --eval mDice
 
-#### Task2: UDA semantic segmentation
 
-     cd MMOTU_DS2Net
-     
-     ./tools/dist_test.sh ./experiments/DS2Net_segformerb5_769x769_40k_MMOTU/config/DS2Net_segformerb5_769x769_40k_MMOTU.py ./experiments/DS2Net_segformerb5_769x769_40k_MMOTU/results/iter_40000.pth --eval mIoU
+## Description of MSCL-SwinUNet
 
-### Generlization Experiments on [WHS-MR_CT](https://github.com/FupingWu90/CT_MR_2D_Dataset_DA): UDA semantic segmentation
+If you have any question, please discuss with me by sending email to wq@cap.edu.cn.
 
-     #### use ./tools/convert_datasets/WHS2d.sh to convert dataFolder for our repo!
-     #### copy dataset to ./data
-     cd MMOTU_DS2Net
-
-     #### Training
-     ./tools/dist_train.sh ./experiments/DS2Net_segformerb5_40k_WHS/config/DS2Net_segformerb5_40k_WHS_MR2CT.py 2
-     #### Testing
-     ./tools/dist_test.sh ./experiments/DS2Net_segformerb5_40k_WHS/config/DS2Net_segformerb5_40k_WHS_MR2CT.py ./experiments/DS2Net_segformerb5_40k_WHS/results/MR2CT_iter_3200_81.11.pth 2 --eval mDice
-
-## Description of MMOTU/DS<sup>2</sup>Net
-- https://arxiv.org/abs/2207.06799 
-
-If you have any question, please discuss with me by sending email to lyushuchang@buaa.edu.cn.
-
-If you find this code useful please cite:
-```
-@article{DBLP:journals/corr/abs-2207-06799,
-  author    = {Qi Zhao and
-               Shuchang Lyu and
-               Wenpei Bai and
-               Linghan Cai and
-               Binghao Liu and
-               Meijing Wu and
-               Xiubo Sang and
-               Min Yang and
-               Lijiang Chen},
-  title     = {A Multi-Modality Ovarian Tumor Ultrasound Image Dataset for Unsupervised
-               Cross-Domain Semantic Segmentation},
-  journal   = {CoRR},
-  volume    = {abs/2207.06799},
-  year      = {2022},
-}
-```
 
 # References
 Many thanks to their excellent works
