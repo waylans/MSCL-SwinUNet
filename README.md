@@ -42,7 +42,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 2. prerequisites: Please refer to  [MMSegmentation PREREQUISITES](https://mmsegmentation.readthedocs.io/en/latest/get_started.html); Please don't forget to install mmsegmentation with
 
      ```
-     cd MMOTU_DS2Net
+     cd MSCL-SwinUNet
      
      pip install -e .
      
