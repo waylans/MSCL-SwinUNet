@@ -55,7 +55,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 
 **swin_base_patch4_window7_224_22k.pth** : Before training Segformer , loading ImageNet-pretrained swin_base_patch4_window7_224_22k.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.
 
-#### Task1: Single-modality semantic segmentation
+#### Task1: Segmentation results on ACDC dataset
 
 <table>
     <tr>
@@ -67,7 +67,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
      
      ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
-#### Task2: Single-modality semantic segmentation
+#### Task2: Segmentation results on the MRI and CT subset of MM-WHS dataset
 
 <table>
     <tr>
@@ -80,14 +80,38 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
      ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
 
+#### Task3: Segmentation results on Synapse dataset
+
+<table>
+    <tr>
+    <td><img src="PaperFigs\Fig9.png" width = "100%" alt="Single-Modality semantic segmentation"/></td>
+    </tr>
+</table>
+  
+     cd MSCL-SwinUNet
+     
+     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
+
+
 ### Testing
 
-#### Task: Single-modality semantic segmentation
+#### Task1: Segmentation results on ACDC dataset
   
      cd MSCL-SwinUNet
      
      ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_3200_81.11.pth 2 --eval mDice
 
+#### Task2: Segmentation results on the MRI and CT subset of MM-WHS dataset
+  
+     cd MSCL-SwinUNet
+     
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_3200_81.11.pth 2 --eval mDice
+
+#### Task3: Segmentation results on Synapse dataset
+  
+     cd MSCL-SwinUNet
+     
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_3200_81.11.pth 2 --eval mDice
 
 ## Description of MSCL-SwinUNet
 
