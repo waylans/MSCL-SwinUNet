@@ -99,19 +99,19 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
   
      cd MSCL-SwinUNet
      
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_3200_81.11.pth 2 --eval mDice
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
 
 #### Task2: Segmentation results on the MRI and CT subset of MM-WHS dataset
   
      cd MSCL-SwinUNet
      
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_3200_81.11.pth 2 --eval mDice
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
 
 #### Task3: Segmentation results on Synapse dataset
   
      cd MSCL-SwinUNet
      
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_3200_81.11.pth 2 --eval mDice
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
 
 ## Description of MSCL-SwinUNet
 
