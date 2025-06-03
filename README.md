@@ -53,13 +53,25 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 
 ### Training
 
-**mit_b5.pth** : [google drive](https://drive.google.com/drive/folders/1cmKZgU8Ktg-v-jiwldEc6IghxVSNcFqk?usp=sharing) (Before training Segformer or DS<sup>2</sup>Net_T, loading ImageNet-pretrained mit_b5.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.)
+**swin_base_patch4_window7_224_22k.pth** : Before training Segformer , loading ImageNet-pretrained swin_base_patch4_window7_224_22k.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.
 
-#### Task: Single-modality semantic segmentation
+#### Task1: Single-modality semantic segmentation
 
 <table>
     <tr>
-    <td><img src="PaperFigs\SSeg.jpg" width = "100%" alt="Single-Modality semantic segmentation"/></td>
+    <td><img src="PaperFigs\Fig7.png" width = "100%" alt="Single-Modality semantic segmentation"/></td>
+    </tr>
+</table>
+  
+     cd MSCL-SwinUNet
+     
+     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
+
+#### Task2: Single-modality semantic segmentation
+
+<table>
+    <tr>
+    <td><img src="PaperFigs\Fig8.png" width = "100%" alt="Single-Modality semantic segmentation"/></td>
     </tr>
 </table>
   
@@ -74,7 +86,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
   
      cd MSCL-SwinUNet
      
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/WHS_iter_3200_81.11.pth 2 --eval mDice
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_3200_81.11.pth 2 --eval mDice
 
 
 ## Description of MSCL-SwinUNet
