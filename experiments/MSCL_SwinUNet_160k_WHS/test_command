@@ -1,0 +1,1 @@
+./tools/dist_test.sh ./experiments/MSCL_SwinUNet_40k_WHS/config/MSCL_SwinUNet_40k_WHS_40k_WHS.py ./experiments/MSCL_SwinUNet_40k_WHS_40k_WHS/results/WHS_iter_3200_81.11.pth 2 --eval mDice
