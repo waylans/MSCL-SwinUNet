@@ -1,1 +1,0 @@
-./tools/dist_train.sh ./experiments/bisenetv2_fcn_769x769_80k_MMOTU/config/bisenetv2_fcn_769x769_80k_MMOTU.py 2
