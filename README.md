@@ -51,7 +51,7 @@ This repo is the implementation of ["Multi-Scheme Cross-Level Attention Embedded
     </tr>
 </table>
   
-     cd MMOTU_DS2Net
+     cd 
      
      ./tools/dist_train.sh ./experiments/pspnet_r50-d8_769x769_20k_MMOTU/config/pspnet_r50-d8_769x769_20k_MMOTU.py 2
 
@@ -77,7 +77,7 @@ This repo is the implementation of ["Multi-Scheme Cross-Level Attention Embedded
 
 ### Testing
 
-#### Task1: Single-modality semantic segmentation
+#### Task: Single-modality semantic segmentation
   
      cd MMOTU_DS2Net
      
