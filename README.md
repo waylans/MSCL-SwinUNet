@@ -55,7 +55,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 
 **swin_base_patch4_window7_224_22k.pth** : Before training SwinUNet , loading ImageNet-pretrained swin_base_patch4_window7_224_22k.pth is very useful. We provide this pretrained backbone here. The pretrained backbone has already been transformed to fit for our repo.
 
-#### Task1: Segmentation results on ACDC dataset
+#### Task1: Segmentation  on ACDC dataset
 
 <table>
     <tr>
@@ -67,7 +67,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
      
      ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
-#### Task2: Segmentation results on the MRI and CT subset of MM-WHS dataset
+#### Task2: Segmentation  on the MRI and CT subset of MM-WHS dataset
 
 <table>
     <tr>
@@ -80,7 +80,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
      ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
 
-#### Task3: Segmentation results on Synapse dataset
+#### Task3: Segmentation  on Synapse dataset
 
 <table>
     <tr>
@@ -95,19 +95,19 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 
 ### Testing
 
-#### Task1: Segmentation results on ACDC dataset
+#### Task1: Segmentation  on ACDC dataset
   
      cd MSCL-SwinUNet
      
      ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
 
-#### Task2: Segmentation results on the MRI and CT subset of MM-WHS dataset
+#### Task2: Segmentation  on the MRI and CT subset of MM-WHS dataset
   
      cd MSCL-SwinUNet
      
      ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
 
-#### Task3: Segmentation results on Synapse dataset
+#### Task3: Segmentation  on Synapse dataset
   
      cd MSCL-SwinUNet
      
