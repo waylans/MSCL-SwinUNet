@@ -10,13 +10,22 @@ This repo is the implementation of ["Multi-Scheme Cross-Level Attention Embedded
     </tr>
 </table>
 
-<p align="center">
-  <img src="PaperFigs/Fig1.png" width="48%" style="display:inline-block"/>
-  <span style="display:inline-block; vertical-align:top;">
-    <img src="PaperFigs/Fig5.png" width="48%"/><br/>
-    <img src="PaperFigs/Fig6.png" width="48%"/>
-  </span>
-</p>
+<table>
+  <tr>
+    <td rowspan="2">
+      <img src="PaperFigs/Fig1.png" width="400px" alt="MSCL-SwinUNet"/>
+    </td>
+    <td>
+      <img src="PaperFigs/Fig5.png" width="300px" alt="ACDC Dataset"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="PaperFigs/Fig6.png" width="300px" alt="MM-WHS Dataset"/>
+    </td>
+  </tr>
+</table>
+
 
 
 
