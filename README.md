@@ -63,9 +63,6 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
     </tr>
 </table>
   
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
 #### Task2: Segmentation  on the MRI and CT subset of MM-WHS dataset
 
@@ -75,9 +72,6 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
     </tr>
 </table>
   
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
 
 #### Task3: Segmentation  on Synapse dataset
@@ -87,6 +81,8 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
     <td><img src="PaperFigs\Fig9.png" width = "100%" alt="Single-Modality semantic segmentation"/></td>
     </tr>
 </table>
+
+### For example:
   
      cd MSCL-SwinUNet
      
