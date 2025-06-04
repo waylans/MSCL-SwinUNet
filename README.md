@@ -91,19 +91,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 
 ### Testing
 
-#### Task1: Segmentation  on ACDC dataset
-  
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
-
-#### Task2: Segmentation  on the MRI and CT subset of MM-WHS dataset
-  
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
-
-#### Task3: Segmentation  on Synapse dataset
+#### For example:
   
      cd MSCL-SwinUNet
      
