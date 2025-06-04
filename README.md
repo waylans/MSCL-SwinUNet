@@ -95,7 +95,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
   
      cd MSCL-SwinUNet
      
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
+     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mIoU
 
 ## Description of MSCL-SwinUNet
 
