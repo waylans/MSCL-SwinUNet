@@ -1,1 +1,0 @@
-### MMSegmentation configurations
