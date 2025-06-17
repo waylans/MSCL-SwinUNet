@@ -32,27 +32,6 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
 
 ## SwinUNet
 
-### Install
-
-1. requirements:
-    
-    python >= 3.7
-        
-    pytorch >= 1.4
-        
-    cuda >= 10.0
-    
-2. prerequisites: Please refer to  [MMSegmentation PREREQUISITES](https://mmsegmentation.readthedocs.io/en/latest/get_started.html); Please don't forget to install mmsegmentation with
-
-     ```
-     cd MSCL-SwinUNet
-     
-     pip install -e .
-     
-     chmod 777 ./tools/dist_train.sh
-     
-     chmod 777 ./tools/dist_test.sh
-     ```
 
 ### Training
 
@@ -66,9 +45,6 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
     </tr>
 </table>
   
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
 
 #### Task2: Segmentation  on the MRI and CT subset of MM-WHS dataset
 
@@ -78,9 +54,7 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
     </tr>
 </table>
   
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
+
 
 
 #### Task3: Segmentation  on Synapse dataset
@@ -91,30 +65,6 @@ To evaluate the performance and generalization ability of the proposed MSCL-Swin
     </tr>
 </table>
   
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_train.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py 2 2
-
-
-### Testing
-
-#### Task1: Segmentation  on ACDC dataset
-  
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
-
-#### Task2: Segmentation  on the MRI and CT subset of MM-WHS dataset
-  
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
-
-#### Task3: Segmentation  on Synapse dataset
-  
-     cd MSCL-SwinUNet
-     
-     ./tools/dist_test.sh ./experiments/MSCL_SwinUNet_160k_WHS/config/MSCL_SwinUNet_160k_WHS.py ./experiments/MSCL_SwinUNet_160k__WHS/results/iter_80000.pth 2 --eval mDice
 
 ## Description of MSCL-SwinUNet
 
